@@ -1,0 +1,129 @@
+/* === Global Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(135deg, #06152c, #9233eab2);
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* === Filter Buttons === */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.filters button {
+  background: #e2e8f0;
+  color: #111;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.filters button:hover,
+.filters button.active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* === Search Box === */
+.search-box {
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+.search-box input {
+  width: 60%;
+  max-width: 400px;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* === Blog Grid === */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Blog Card === */
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* === Card Content === */
+.blog-content {
+  padding: 1rem;
+}
+
+.blog-content h3 {
+  margin: 0 0 0.4rem;
+  color: #111;
+}
+
+.blog-content p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* === Load More Button === */
+.load-more {
+  display: block;
+  margin: 1rem auto 2rem;
+  padding: 0.8rem 1.5rem;
+  background: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.load-more:hover {
+  background: #2563eb;
+}
